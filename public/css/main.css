@@ -2549,6 +2549,7 @@ section {
   border-radius: 85px;
 }
 .sr-white-button a:hover {
+  color: #000;
   background-color: #f5f6f9;
 }
 
