@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'index')
@@ -23,12 +24,26 @@ Route::view('terms-of-service', 'terms-of-service')
 Route::view('cookie-policy', 'cookie-policy')
     ->name('cookie-policy');
 
-Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified'])
-    ->name('dashboard');
+// Route::view('dashboard', 'dashboard')
+//     ->middleware(['auth', 'verified'])
+//     ->name('dashboard');
+
 
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
-require __DIR__.'/auth.php';
+
+Route::get('dashboard', [DashboardController::class, 'index'])
+    ->middleware(['auth', 'verified'])
+    ->name('dashboard');
+
+Route::get('tickets', [DashboardController::class, 'tickets'])
+    ->middleware(['auth', 'verified'])
+    ->name('tickets');
+
+Route::get('users', [DashboardController::class, 'users'])
+    ->middleware(['auth', 'verified'])
+    ->name('users');
+
+require __DIR__ . '/auth.php';

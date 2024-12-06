@@ -6,6 +6,9 @@
             <li class="has-sub"><a href="{{ route('about') }}">ABOUT US</a></li>
             <li class="has-sub"><a href="{{ route('portfolio') }}">PORTFOLIO</a></li>
             <li class="has-sub"><a href="{{ route('services') }}">SERVICES</a></li>
+            @if (Route::has('login'))
+                <livewire:welcome.navigation />
+            @endif
         </ul>
     </div>
 </div>
@@ -28,7 +31,8 @@
                     <li class="menu-item-has-children"><a href="{{ route('index') }}"><b><i class="fa fa-home"></i>
                                 HOME</b></a>
                     </li>
-                    <li class="menu-item-has-children"><a href="{{ route('about') }}"><b><i class="fa fa-users"></i> ABOUT
+                    <li class="menu-item-has-children"><a href="{{ route('about') }}"><b><i class="fa fa-users"></i>
+                                ABOUT
                                 US</b></a></li>
             </div>
             <div class="fixed-header-logo">
@@ -39,7 +43,8 @@
             </div>
             <div class="header-nav">
                 <ul class="main-menu">
-                    <li class="menu-item-has-children"><a href="{{ route('portfolio') }}"><b><i class="fa fa-suitcase"></i>
+                    <li class="menu-item-has-children"><a href="{{ route('portfolio') }}"><b><i
+                                    class="fa fa-suitcase"></i>
                                 PORTFOLIO</b></a></li>
                     <li class="menu-item-has-children"><a href="{{ route('services') }}"><b><i class="fa fa-server"></i>
                                 SERVICES</b></a>
