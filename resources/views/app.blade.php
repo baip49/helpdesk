@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/particles.css">
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])

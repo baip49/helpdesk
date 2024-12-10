@@ -14,18 +14,13 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         Category::create([
-            'name' => 'Categoría 1',
-            'slug' => 'categoria-1',
+            'name' => 'Media edition',
+            'slug' => 'media-edition',
         ]);
 
         Category::create([
-            'name' => 'Categoría 2',
-            'slug' => 'categoria-2',
-        ]);
-
-        Category::create([
-            'name' => 'Categoría 3',
-            'slug' => 'categoria-3',
+            'name' => 'Design',
+            'slug' => 'design',
         ]);
     }
 }

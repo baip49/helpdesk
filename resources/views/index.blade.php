@@ -159,14 +159,14 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="images/projects/opiscommunity_w.png" alt="">
+                        <img src="images/projects/akimlogo.png" alt="">
                         <div class="item-content">
                             <div class="main-content">
                                 <div class="icon">
-                                    <a href="#"><i class="fa fa-arrow-right"></i></a>
+                                    <a href="https://www.youtube.com/@AkimStuff/videos" target="_blank"><i class="fa fa-arrow-right"></i></a>
                                 </div>
-                                <h4>OPI's community</h4>
-                                <span>Graphic Design</span>
+                                <h4>Akim Aguilar</h4>
+                                <span>Media Edition</span>
                             </div>
                         </div>
                     </div>

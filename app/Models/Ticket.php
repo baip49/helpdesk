@@ -23,11 +23,16 @@ class Ticket extends Model
 
     public function categories()
     {
-        return $this->belongsToMany(Category::class);
+        return $this->belongsToMany(Category::class, 'category_ticket');
     }
 
     public function messages()
     {
         return $this->hasMany(Message::class);
+    }
+
+    public function assignedUsers()
+    {
+        return $this->belongsToMany(User::class, 'ticket_user');
     }
 }

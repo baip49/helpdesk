@@ -16,16 +16,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->string('title')->notNull();
-            $table->text('message');
+            $table->text('description')->nullable();
             $table->string('status')->default('open');
-            $table->timestamps();
-        });
-
-        // Crear la tabla ticket_category para la relación muchos a muchos
-        Schema::create('ticket_category', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('ticket_id')->constrained()->onDelete('cascade');
-            $table->foreignId('category_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -35,7 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('ticket_category');
         Schema::dropIfExists('tickets');
     }
 };

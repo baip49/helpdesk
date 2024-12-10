@@ -3,3 +3,5 @@
 .env.production
 *.docx
 helpdesk.sql
+node_modules
+.env
