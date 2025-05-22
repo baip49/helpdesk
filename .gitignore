@@ -5,3 +5,4 @@
 helpdesk.sql
 node_modules
 .env
+.env copy
